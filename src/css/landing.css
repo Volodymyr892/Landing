@@ -1,6 +1,6 @@
 .container{
     padding: 10px 26px 50px 26px;
-    background-image: url('/src/path/background.svg'), url('/src/path/net.svg');
+    background-image: url('/public/background.svg'), url('/public/net.svg');
     background-repeat: no-repeat;
     background-size: 85%, 100%;
     background-position: right center, 232px top; 
@@ -417,7 +417,7 @@ font-size: 36px;;
     left: 1px;
     width: 11px;
     height: 11px;
-    background: url('/src/path/Vector.svg') no-repeat center center;
+    background: url('/public/Vector.svg') no-repeat center center;
     background-size: contain;
 }
 .checkboxContainer{
