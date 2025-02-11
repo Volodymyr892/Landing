@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css" />
+<link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
     <main id="main-content">
@@ -21,8 +22,13 @@
         .then(response => response.text())
         .then(data => {
           document.getElementById('main-content').innerHTML = data;
+          initMainJSLogic();
+          startTimer();
+          initFormValidation();
         })
         .catch(error => console.error('Error loading landing.html:', error));
+    </script>
+    <script src="./src/main.js">
     </script>
   </body>
 </html>

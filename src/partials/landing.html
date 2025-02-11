@@ -1,58 +1,116 @@
-<section>
-    <p>Безоплатний вебінар</p>
-    <p>Старт: 10 січня 19:30</p>
-    <h1>Навчіться створювати 
-        Excel-таблиці 
-        на pro-рівні
-    </h1>
-        <p>Опануйте функціонал Microsoft Excel, автоматизуйте свою роботу 
-            та створюйте таблиці швидко 
-            і в задоволення
-    </p>
-    <div>
-        <h2>Реєструйся просто зараз</h2>
-        <div>
-            <p>залишилось до початку</p>
-            <div></div>
-        </div>
-
-        <form>
-            
-            <input type="text" id="name" name="name" placeholder="Введи своє ім’я" required>
-            <input type="text" id="email" name="email" placeholder="Введи свій E-mail" required>
-            <input type="text" id="phone" name="phone" placeholder="+380 95 -- -- ---" required>
-
-            <div>
-                <input type="checkbox" id="agreement" name="agreement" required>
-                <label for="agreement">Згоден з <a href="#">Політикою конфіденційності</a> та <a href="#">Умовами користування послугами</a></label>
-            </div>
-
-            <button type="submit">Зареєструватися</button>
-        </form>
-
-        <button>Зареєструватися</button>
+<section class="container">
+    <div class="imgCont">
+        <img src="/src/path/logo.svg" alt="logo">
     </div>
+  <div class="containerFlex">
+       <div>
+            <div class="containerBox">
+                <div><p class="startB box"><span class="top-right"></span>Безоплатний вебінар<span class="bottom-left"></span></p></div>
+                <div><p class="start box"><span class="top-right"></span>Старт: 10 січня 19:30<span class="bottom-left"></span></p></div>
+            </div>
+           <div class="titleContiner">
+                <h1 class="title">Навчіться створювати 
+                    Excel-таблиці 
+                    на pro-рівні
+                </h1>
+                    <p class="description">Опануйте функціонал Microsoft Excel, автоматизуйте свою роботу 
+                        та створюйте таблиці швидко 
+                        і в задоволення
+                </p>
+           </div>
+       </div>
+        <div class="containerForm">
+            <div>
+                <h2 class="regNow">Реєструйся просто зараз</h2>
+                <div class="timer">
+                    <div>
+                        <p class="time-part" id="modal-days"></p>
+                        <p class="timePartDays">днів</p>
+                    </div>
+                    <p class="separator">:</p>
+                    <div>
+                        <p class="time-part" id="modal-hours"></p>
+                        <p  class="timePartDays">годин</p>
+                    </div>
+                    <p class="separator">:</p>
+                    <div>
+                        <p class="time-part" id="modal-minutes"></p>
+                        <p  class="timePartDays">хвилин</p>
+                    </div>
+                    <p class="separator">:</p>
+                    <div>
+                        <p class="time-part seconds" id="modal-seconds"></p>
+                        <p  class="timePartDays">секунд</p>
+                    </div>
+                </div>
+            </div>
+    
+            <form class="form">
+                
+                <input class="input" type="text" id="name" name="name" placeholder="Введи своє ім’я" required>
+                <input class="input" type="text" id="email" name="email" placeholder="Введи свій E-mail" required>
+                <div class="input-container">
+                    <img class="flag-icon" src="/src/path/flag.svg" alt="Flag">
+                    <input class="inputPhone" type="text" id="phone" name="phone" placeholder="+380 95 -- -- ---" required>
+                </div>
+
+    
+                <div class="checkboxContainer">
+                    <input class="styled-checkbox" type="checkbox" id="agreement" name="agreement" required>
+                    <label class="checkbox-label"  for="agreement">
+                    </label>
+                    <p  class="labelForm">Згоден з <a class="a" href="#">Політикою конфіденційності</a> та <a class="a" href="#">Умовами користування послугами</a></p>
+                </div>
+                <button class="buttonRegister" type="submit">Зареєструватися</button>
+            </form>
+    
+            <div class="buttonRegContainer"><button type="submit" class="buttonReg">Зареєструватися</button></div>
+        </div>
+  </div>
 
     <!-- Модальне вікно -->
-    <div>
-        <div>
-            <h2>Реєструйся просто зараз</h2>
-            <div>
-                <p>залишилось до початку</p>
-                <div></div>
+    <div class="modal" >
+        <div class="modalContent">
+            <img src="/src/path/logo.svg" alt="logo">
+            <button type="submit" class="close"><img src="/src/path/x.svg" alt="x"></button>
+            <h2 class="regNowModal">Реєструйся просто зараз</h2>
+            <div class="timer">
+                <div>
+                    <p class="time-part" id="days"></p>
+                    <p class="timePartDays">днів</p>
+                </div>
+                <p class="separator">:</p>
+                <div>
+                    <p class="time-part" id="hours"></p>
+                    <p  class="timePartDays">годин</p>
+                </div>
+                <p class="separator">:</p>
+                <div>
+                    <p class="time-part" id="minutes"></p>
+                    <p  class="timePartDays">хвилин</p>
+                </div>
+                <p class="separator">:</p>
+                <div>
+                    <p class="time-part seconds" id="seconds"></p>
+                    <p  class="timePartDays">секунд</p>
+                </div>
             </div>
     
-            <form>
+            <form class="formModal">
                 
-                <input type="text" id="name" name="name" placeholder="Введи своє ім’я" required>
-                <input type="text" id="email" name="email" placeholder="Введи свій E-mail" required>
-                <input type="text" id="phone" name="phone" placeholder="+380 95 -- -- ---" required>
-    
-                <div>
-                    <input type="checkbox" id="agreement" name="agreement" required>
-                    <label for="agreement">Згоден з <a href="#">Політикою конфіденційності</a> та <a href="#">Умовами користування послугами</a></label>
+                <input class="input" type="text" id="name" name="name" placeholder="Введи своє ім’я" required>
+                <input class="input" type="text" id="email" name="email" placeholder="Введи свій E-mail" required>
+                <div class="input-container">
+                    <img class="flag-icon" src="/src/path/flag.svg" alt="Flag">
+                    <input class="inputPhone" type="text" id="phone" name="phone" placeholder="+380 95 -- -- ---" required>
                 </div>
-                <button>Зареєструватися</button>
+    
+                <div class="checkboxContainerModal">
+                    <input class="styled-checkboxModal" type="checkbox" id="agreement" name="agreement" required>
+                    <label class="checkbox-labelModal"  for="agreement"></label>
+                    <p class="labelModal">Згоден з <a class="a" href="#">Політикою конфіденційності</a> та <a class="a" href="#">Умовами користування послугами</a></p>
+                </div>
+                <button type="submit" class="buttonModal">Зареєструватися</button>
             </form>
     
         </div>
